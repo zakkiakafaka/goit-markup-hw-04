@@ -11,8 +11,8 @@
 </head>
 <body>
     <!-- Шапка сайта (Верхняя линяя) -->
-    <header>
-        <div class="header container">
+    <header class="header">
+        <div class="container header-container">
         <!-- Главный блок навигации -->
         <nav class="site-nav">
             <a href="./index.html" lang="en" class="logo">
@@ -34,11 +34,24 @@
         <!-- Контакты -->
         <div class="contacts">
             <ul class="contacts-list">
-                <li>
-                    <a href="mailto:info@devstudio.com" class="contacts-list-item">info@devstudio.com</a>
+                <li class="contacts-list-item">
+                    <a href="mailto:info@devstudio.com" class="contacts-list-link">
+                        <svg class="envelope">
+                            <use href="./images/svg/sprite.svg#icon-envelope">
+
+                            </use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
                 </li>
-                <li>
-                    <a href="tel:+380961111111" class="contacts-list-item">+38 096 111 11 11</a>
+                <li class="contacts-list-item">
+                    <a href="tel:+380961111111" class="contacts-list-link">+38 096 111 11 11
+                        <svg>
+                            <use href="./images/svg/sprite.svg#mobile">
+
+                            </use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -115,7 +128,7 @@
                         <ul class="social-list">
                             <li class="social-list-item">
                                 <a class="social-link" href="https://www.instagram.com/" aria-label="ссылка на instagram">
-                                <svg>
+                                <svg >
                                     <use></use>
                                 </svg>
                                 </a>

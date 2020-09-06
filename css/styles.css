@@ -45,17 +45,14 @@ html {
 
 /* ===== Header ===== */
 
-header {
-    background-color: #FFFFFF;
-    box-sizing: border-box;
+.header {
     display: flex;
-    left: 0px;
-    top: 0px;
-    margin: 0;
-    text-align: center;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-.header {
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -93,6 +90,7 @@ header {
 .site-nav-list {
     display: flex;
     margin-left: 93px;
+    margin-right: auto;
 }
 
 .site-nav-item:not(:last-child) {
@@ -107,6 +105,7 @@ header {
 
 .contacts-list {
     display: flex;
+    align-items: center;
 }
 
 .contacts-list li + li {
@@ -153,7 +152,9 @@ a:visited {
     color: var(--accent-color);
 }
 
-.contacts-list-item {
+.contacts-list-link {
+    display: flex;
+    align-items: center;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -162,6 +163,16 @@ a:visited {
     letter-spacing: 0.02em;
     color: #757575;
 
+}
+
+.contacts-list-item {
+    align-items: center;
+}
+
+.envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
 }
 
 .contacts-list-item:hover,
@@ -387,6 +398,8 @@ footer {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-right: 93px;
+    display: block;
 }
 
 .footer .logo {
