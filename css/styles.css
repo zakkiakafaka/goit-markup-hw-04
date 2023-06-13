@@ -445,7 +445,7 @@ body {
 }
 
 .customers-list-item {
-    width: calc((100% - 120px) / 6);
+    flex-basis: calc((100% - 120px) / 6);
     height: 88px;
 }
 
